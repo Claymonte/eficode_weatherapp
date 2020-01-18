@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  front_end:
+    build:
+      context: ./frontend/
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+  back_end:
+    build:
+      context: ./backend/
+    ports:
+      - "9000:9000"
+    expose:
+      - "9000"
